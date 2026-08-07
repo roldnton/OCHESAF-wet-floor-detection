@@ -35,8 +35,11 @@ After running 50 epochs for training the AI, here are the results from the last 
 | RT-DETR Large | Vision Transformer | 0.47209 | 0.36111 | 0.31375 | 0.15323 |
 
 **YOLO26** shows values that indicate it achieves the highest precision by a wide margin, providing a 63.2% percentage, with its biggest drawback being its low recall value, 25%.
+
 **YOLO11** shows the highest overall detection score as its mAP50 value is 38.4%, and the highest recall value of 50%. On the other hand, its precision score is a low 39.1%, meaning that more than half the time it alerts you of a wet floor, it was a false alarm.
+
 **RT-DETR** shows values that prove that Transformers are too heavy for this particular task, as its precision value lies between the other two (47.2%) with a recall of 36.1%. The mAP50 value was also barely better than YOLO26, giving a percentage of 31.3%, not justifying the computational power this model uses compared to the two YOLO models.
+
 The mAP50-95 values for all the models show extremely low scores, which tells us that even is the models find the wet floor, the boxes bounding it are very imprecise. This suggests that more training would benefit the models, as they were able to learn where the wet spots would roughly be, but they did not have enough time to figure out how to precisely draw the boxes around it.
 
 ## Acknowledgements, Dataset, Framework, and Model Citations
