@@ -30,7 +30,7 @@ __`Precision`__: How often they are right in identifying wet floors
 After running 50 epochs for training the AI, here are the results from the last run:
 | Model | Architecture | Precision | Recall | mAP50 | mAP50-95 |
 | -------- | -------- | -------- | -------- | -------- | -------- |
-| YOLO26  | CNN  | 0.63205 | 0.25 | 0.30223 | 0.30223 | 0.11987 |
+| YOLO26  | CNN  | 0.63205 | 0.25 | 0.30223 | 0.11987 |
 | YOLO11  | CNN  | 0.39156 | 0.50055 | 0.38486 | 0.17236 |
 | RT-DETR Large | Vision Transformer | 0.47209 | 0.36111 | 0.31375 | 0.15323 |
 
