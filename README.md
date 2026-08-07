@@ -29,18 +29,61 @@ _(still has to be filled up)_
 | YOLO11  | CNN  | ~ | ~ | ~ | ~ | 
 | RT-DETR Large | Vision Transformer | ~ | ~ | ~ | ~ | 
 
-## Acknowledgements & Dataset Citation
+## Acknowledgements, Dataset, Framework, and Model Citations
+If you use this repository or build upon this research, please cite the underlying architectures as follows:
+
+### YOLO26
+```bibtex
+@misc{jocher2026ultralyticsyolo26unifiedrealtime,
+  title = {Ultralytics YOLO26: Unified Real-Time End-to-End Vision Models},
+  author = {Glenn Jocher and Jing Qiu and Mengyu Liu and Shuai Lyu and Fatih Cagatay Akyon and Muhammet Esat Kalfaoglu},
+  year = {2026},
+  eprint = {2606.03748},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  doi = {10.48550/arXiv.2606.03748},
+  url = {https://arxiv.org/abs/2606.03748},
+}
+```
+
+### YOLO11
+```bibtex
+@software{yolo11_ultralytics,
+  author = {Glenn Jocher and Jing Qiu},
+  title = {Ultralytics YOLO11},
+  version = {11.0.0},
+  year = {2024},
+  url = {https://github.com/ultralytics/ultralytics},
+  orcid = {0000-0001-5950-6979, 0000-0003-3783-7069},
+  license = {AGPL-3.0}
+}
+```
+
+### RT-DETR
+```bibtex
+@misc{lv2023detrs,
+      title={DETRs Beat YOLOs on Real-time Object Detection},
+      author={Wenyu Lv and Shangliang Xu and Yian Zhao and Guanzhong Wang and Jinman Wei and Cheng Cui and Yuning Du and Qingqing Dang and Yi Liu},
+      year={2023},
+      eprint={2304.08069},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+
 This project utilizes the **Wet Floor Dataset** provided by user `TestDemo` on Roboflow Universe under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
 
 ```bibtex
 @misc{ wet-floor-ecyia_dataset,
-    title = { Wet floor Dataset },
-    type = { Open Source Dataset },
-    author = { TestDemo },
-    howpublished = { \url{ [https://universe.roboflow.com/testdemo-orvjj/wet-floor-ecyia](https://universe.roboflow.com/testdemo-orvjj/wet-floor-ecyia) } },
-    url = { [https://universe.roboflow.com/testdemo-orvjj/wet-floor-ecyia](https://universe.roboflow.com/testdemo-orvjj/wet-floor-ecyia) },
-    journal = { Roboflow Universe },
-    publisher = { Roboflow },
-    year = { 2025 },
-    month = { oct },
+  title = { Wet floor Dataset },
+  type = { Open Source Dataset },
+  author = { TestDemo },
+  howpublished = { \url{ https://universe.roboflow.com/testdemo-orvjj/wet-floor-ecyia } },
+  url = { https://universe.roboflow.com/testdemo-orvjj/wet-floor-ecyia },
+  journal = { Roboflow Universe },
+  publisher = { Roboflow },
+  year = { 2025 },
+  month = { oct },
+  note = { visited on 2026-08-07 },
 }
+```
