@@ -14,9 +14,9 @@ YOLO26, YOLO11, and RT-DETR-L AI models trained under the Wet Floor Dataset by T
 `pip install ultralytics opencv-python`
 ## Train the Models
 To train the models, run these files individually, where the results and best weights will be saved into the `runs/detect` folder:
-`python yolo26.py
-python yolo11.py
-python rtdetr.py`
+* `python yolo26.py`
+* `python yolo11.py`
+* `python rtdetr.py`
 ## Live Webcam Inference
 After training the models, the live detection can be run in the file `realtime.py` in which the first section of the code allows you to choose between the three models trained, being configured with the "#" comment function. Press `q` to quit the live camera feed.
 
