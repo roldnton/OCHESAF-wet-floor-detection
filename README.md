@@ -18,16 +18,26 @@ To train the models, run these files individually, where the results and best we
 * `python yolo11.py`
 * `python rtdetr.py`
 ## Live Webcam Inference
-After training the models, the live detection can be run in the file `realtime.py` in which the first section of the code allows you to choose between the three models trained, being configured with the "#" comment function. Press `q` to quit the live camera feed.
+After training the models, the live detection can be run in the file `realtime.py`, in which the first section of the code allows you to choose between the three models trained, configured with the `#` comment function. Press `q` to quit the live camera feed.
 
 ## Model Comparison and Results
+The models are compared with each other using these metrics:
+__`Precision`__: How often they are right in identifying wet floors
+**`Recall`**: How often they miss the hazard
+**`mAP50`**: Overall detection score
+**`mAP50-95`**: Box quality and accuracy
 
-_(still has to be filled up)_
-| Model | Architecture | Parameters | Precision | Recall | mAP50
+After running 50 epochs for training the AI, here are the results from the last run:
+| Model | Architecture | Precision | Recall | mAP50 | mAP50-95 |
 | -------- | -------- | -------- | -------- | -------- | -------- |
-| YOLO26  | CNN  | ~ | ~ | ~ | ~ | 
-| YOLO11  | CNN  | ~ | ~ | ~ | ~ | 
-| RT-DETR Large | Vision Transformer | ~ | ~ | ~ | ~ | 
+| YOLO26  | CNN  | 0.63205 | 0.25 | 0.30223 | 0.30223 | 0.11987 |
+| YOLO11  | CNN  | 0.39156 | 0.50055 | 0.38486 | 0.17236 |
+| RT-DETR Large | Vision Transformer | 0.47209 | 0.36111 | 0.31375 | 0.15323 |
+
+**YOLO26** shows values that indicate it achieves the highest precision by a wide margin, providing a 63.2% percentage, with its biggest drawback being its low recall value, 25%.
+**YOLO11** shows the highest overall detection score as its mAP50 value is 38.4%, and the highest recall value of 50%. On the other hand, its precision score is a low 39.1%, meaning that more than half the time it alerts you of a wet floor, it was a false alarm.
+**RT-DETR** shows values that prove that Transformers are too heavy for this particular task, as its precision value lies between the other two (47.2%) with a recall of 36.1%. The mAP50 value was also barely better than YOLO26, giving a percentage of 31.3%, not justifying the computational power this model uses compared to the two YOLO models.
+The mAP50-95 values for all the models show extremely low scores, which tells us that even is the models find the wet floor, the boxes bounding it are very imprecise. This suggests that more training would benefit the models, as they were able to learn where the wet spots would roughly be, but they did not have enough time to figure out how to precisely draw the boxes around it.
 
 ## Acknowledgements, Dataset, Framework, and Model Citations
 If you use this repository or build upon this research, please cite the underlying architectures as follows:
