@@ -1,7 +1,7 @@
-## Occupational Hazard Detection: Real-Time Wet Floor Monitoring
+# Occupational Hazard Detection: Real-Time Wet Floor Monitoring
 YOLO26, YOLO11, and RT-DETR-L AI models trained under the Wet Floor Dataset by TestDemo to detect wet spots on the floor for Occupational Health and Safety assistance. This repository contains the code and models for an automated computer vision safety system designed to detect wet floor hazards in real-time. This project evaluates and compares multiple state-of-the-art AI architectures for edge deployment.
 
-# Repository Structure
+## Repository Structure
 *   **`Wet floor.yolo26/`** — The dataset directory containing the training images, validation images, and the `data.yaml` configuration file.
 *   **`runs/`** — Automatically generated directory by Ultralytics containing model performance metrics (Precision, Recall, mAP, confusion matrices) and saved weights from training sessions.
 *   **`yolo26.py`** — Training script for the end-to-end NMS-free YOLO26 Nano model.
@@ -9,15 +9,15 @@ YOLO26, YOLO11, and RT-DETR-L AI models trained under the Wet Floor Dataset by T
 *   **`rtdetr.py`** — Training script for the RT-DETR (Real-Time Detection Transformer) model.
 *   **`realtime.py`** — The live-inference dashboard. This script hooks into a webcam (or video file), runs the chosen trained model, and outputs visual bounding boxes and hazard alerts in real-time.
 
-## How to Use:
-# Install Dependencies
+# How to Use:
+## Install Dependencies
 `pip install ultralytics opencv-python`
-# Train the Models
+## Train the Models
 To train the models, run these files individually, where the results and best weights will be saved into the `runs/detect` folder:
 `python yolo26.py
 python yolo11.py
 python rtdetr.py`
-# Live Webcam Inference
+## Live Webcam Inference
 After training the models, the live detection can be run in the file `realtime.py` in which the first section of the code allows you to choose between the three models trained, being configured with the "#" comment function. Press `q` to quit the live camera feed.
 
 ## Model Comparison and Results
