@@ -20,7 +20,7 @@ To train the models, run these files individually, where the results and best we
 ## Live Webcam Inference
 After training the models, the live detection can be run in the file `realtime.py`, in which the first section of the code allows you to choose between the three models trained, configured with the `#` comment function. Press `q` to quit the live camera feed.
 
-## Model Comparison and Results
+# Model Comparison and Results
 The models are compared with each other using these metrics:
 __`Precision`__: How often they are right in identifying wet floors
 **`Recall`**: How often they miss the hazard
