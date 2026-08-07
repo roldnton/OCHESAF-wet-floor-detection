@@ -1,4 +1,4 @@
-# Evaluating Real-Time Vision Models for Occupational Hazard Detection: A Comparative Analysis of YOLO and RT-DETR
+# A Comparative Analysis of YOLO and RT-DETR in Occupational Hazard Detection of Wet Floors
 YOLO26, YOLO11, and RT-DETR-L AI models trained under the Wet Floor Dataset by TestDemo to detect wet spots on the floor for Occupational Health and Safety assistance. This repository contains the code and models for an automated computer vision safety system designed to detect wet floor hazards in real-time. This project evaluates and compares multiple state-of-the-art AI architectures for edge deployment.
 
 ## Repository Structure
