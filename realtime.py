@@ -26,7 +26,7 @@ while cap.isOpened():
     for result in results:
         # If the model detects a bounding box, it found a hazard
         if len(result.boxes) > 0:
-            print("⚠️ ALERT: Wet Floor Detected! Triggering safety protocol...")
+            print("⚠️ ALERT: Wet Floor Detected!")
             # Here you could add code to send an email, text, or sound an alarm
 
     # 5. Draw the bounding boxes and labels on the video frame
