@@ -22,9 +22,13 @@ After training the models, the live detection can be run in the file `realtime.p
 
 # Model Comparison and Results
 The models are compared with each other using these metrics:
-__`Precision`__: How often they are right in identifying wet floors
+
+**`Precision`**: How often they are right in identifying wet floors
+
 **`Recall`**: How often they miss the hazard
+
 **`mAP50`**: Overall detection score
+
 **`mAP50-95`**: Box quality and accuracy
 
 After running 50 epochs for training the AI, here are the results from the last run:
